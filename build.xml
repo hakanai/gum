@@ -1,0 +1,16 @@
+<project name="gum" default="jar">
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar jarfile="build/gum.jar">
+            <fileset dir="build/classes"/>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+</project>
