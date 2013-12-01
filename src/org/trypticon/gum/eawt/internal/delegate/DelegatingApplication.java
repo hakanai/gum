@@ -109,8 +109,10 @@ public class DelegatingApplication implements Application {
         switch (strategy) {
             case SYSTEM_EXIT_0:
                 delegate.setQuitStrategy(com.apple.eawt.QuitStrategy.SYSTEM_EXIT_0);
+                break;
             case CLOSE_ALL_WINDOWS:
                 delegate.setQuitStrategy(com.apple.eawt.QuitStrategy.CLOSE_ALL_WINDOWS);
+                break;
             default:
                 throw new UnsupportedOperationException("Unsupported quit strategy: " + strategy);
 
