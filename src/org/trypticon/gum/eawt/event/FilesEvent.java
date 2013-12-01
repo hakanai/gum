@@ -9,7 +9,7 @@ public abstract class FilesEvent extends AppEvent {
     private final List<File> files;
 
     protected FilesEvent(List<File> files) {
-        this.files = new ArrayList<File>(files);
+        this.files = new ArrayList<>(files);
     }
 
     public List<File> getFiles() {
