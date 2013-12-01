@@ -1,5 +1,9 @@
-package org.trypticon.gum.eawt;
+package org.trypticon.gum;
 
+import org.trypticon.gum.concurrent.Dispatch;
+import org.trypticon.gum.concurrent.internal.DelegatingDispatch;
+import org.trypticon.gum.eawt.Application;
+import org.trypticon.gum.eawt.FullScreenUtilities;
 import org.trypticon.gum.eawt.internal.delegate.DelegatingApplication;
 import org.trypticon.gum.eawt.internal.delegate.DelegatingFullScreenUtilities;
 import org.trypticon.gum.eawt.internal.nul.NullApplication;
@@ -7,6 +11,8 @@ import org.trypticon.gum.eawt.internal.nul.NullFullScreenUtilities;
 
 /**
  * Factory to get the top-level instance of the application.
+ *
+ * @author trejkaz
  */
 public class MacFactory {
 
@@ -34,6 +40,22 @@ public class MacFactory {
         } else {
             return new NullFullScreenUtilities();
         }
+    }
+
+    /**
+     * <p>Gets an instance of the concurrent dispatch utilities.</p>
+     *
+     * @return the concurrent dispatch utilities. Returns {@code null} if the service is not available on
+     *         the current platform.
+     */
+    public static Dispatch getDispatch() {
+        if (isMac()) {
+            DelegatingDispatch dispatch = new DelegatingDispatch();
+            if (dispatch.isSupported()) {
+                return dispatch;
+            }
+        }
+        return null;
     }
 
     /**

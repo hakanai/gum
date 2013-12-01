@@ -8,7 +8,8 @@ import java.awt.*;
 /**
  * Top-level interface to the application.
  *
- * @see org.trypticon.gum.eawt.MacFactory#getApplication()
+ * @see org.trypticon.gum.MacFactory#getApplication()
+ * @author trejkaz
  */
 public interface Application {
 
