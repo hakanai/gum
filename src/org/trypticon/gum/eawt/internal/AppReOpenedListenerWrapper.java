@@ -4,7 +4,7 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.AppReOpenedEvent;
 import org.trypticon.gum.eawt.event.AppReOpenedListener;
 
-public class AppReOpenedListenerWrapper implements com.apple.eawt.AppReOpenedListener {
+class AppReOpenedListenerWrapper implements com.apple.eawt.AppReOpenedListener {
     private final AppReOpenedListener delegate;
 
     public AppReOpenedListenerWrapper(AppReOpenedListener delegate) {

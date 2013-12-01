@@ -6,6 +6,7 @@ package org.trypticon.gum.eio;
  * @author trejkaz
  */
 public enum Domain {
+
     /**
      * kOnAppropriateDisk
      */

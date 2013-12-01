@@ -4,7 +4,7 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.FullScreenEvent;
 import org.trypticon.gum.eawt.event.FullScreenListener;
 
-public class FullScreenListenerWrapper implements com.apple.eawt.FullScreenListener {
+class FullScreenListenerWrapper implements com.apple.eawt.FullScreenListener {
     private final FullScreenListener delegate;
 
     public FullScreenListenerWrapper(FullScreenListener delegate) {

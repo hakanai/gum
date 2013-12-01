@@ -1,7 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="EntryPointsManager">
-    <entry_points version="2.0" />
+    <entry_points version="2.0">
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.AboutEvent" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.MacFactory org.trypticon.gum.eio.FileManager getFileManager()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.MacFactory org.trypticon.gum.concurrent.Dispatch getDispatch()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.MacFactory org.trypticon.gum.eawt.FullScreenUtilities getFullScreenUtilities()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.MacFactory org.trypticon.gum.eawt.Application getApplication()" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.MacFactory" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.concurrent.Dispatch java.util.concurrent.Executor getBlockingMainQueueExecutor()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.concurrent.Dispatch java.util.concurrent.Executor getNonBlockingMainQueueExecutor()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.concurrent.Dispatch java.util.concurrent.ExecutorService createSerialExecutor(java.lang.String label)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.concurrent.Dispatch java.util.concurrent.Executor getAsyncExecutor(org.trypticon.gum.concurrent.Priority priority)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.concurrent.Dispatch" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void requestToggleFullScreen(java.awt.Window window)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setDefaultMenuBar(javax.swing.JMenuBar menuBar)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setDockIconBadge(java.lang.String text)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application java.awt.Image getDockIconImage()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setDockIconImage(java.awt.Image image)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application java.awt.PopupMenu getDockMenu()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setDockMenu(java.awt.PopupMenu popupMenu)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void openHelpViewer()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void requestUserAttention(boolean critical)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void requestForeground(boolean allWindows)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void disableSuddenTermination()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void enableSuddenTermination()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setQuitStrategy(org.trypticon.gum.eawt.QuitStrategy strategy)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setQuitHandler(org.trypticon.gum.eawt.event.QuitHandler handler)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setOpenURIHandler(org.trypticon.gum.eawt.event.OpenURIHandler handler)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setPrintFileHandler(org.trypticon.gum.eawt.event.PrintFilesHandler handler)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setOpenFileHandler(org.trypticon.gum.eawt.event.OpenFilesHandler handler)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setPreferencesHandler(org.trypticon.gum.eawt.event.PreferencesHandler handler)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void setAboutHandler(org.trypticon.gum.eawt.event.AboutHandler handler)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void removeAppEventListener(org.trypticon.gum.eawt.event.AppEventListener listener)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.Application void addAppEventListener(org.trypticon.gum.eawt.event.AppEventListener listener)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.Application" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.FullScreenUtilities void removeFullScreenListenerFrom(java.awt.Window window, org.trypticon.gum.eawt.event.FullScreenListener listener)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.FullScreenUtilities void addFullScreenListenerTo(java.awt.Window window, org.trypticon.gum.eawt.event.FullScreenListener listener)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.FullScreenUtilities void setWindowCanFullScreen(java.awt.Window window, boolean canFullScreen)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.FullScreenUtilities" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager boolean revealInFinder(java.io.File file)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager boolean moveToTrash(java.io.File file)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File getPathToApplicationBundle()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File getResource(java.lang.String resourceName, java.lang.String subDirName, java.lang.String type)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File getResource(java.lang.String resourceName, java.lang.String subDirName)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File getResource(java.lang.String resourceName)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File findFolder(org.trypticon.gum.eio.Domain domain, org.trypticon.gum.eio.FolderType folderType, boolean createIfNeeded)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File findFolder(org.trypticon.gum.eio.Domain domain, org.trypticon.gum.eio.FolderType folderType)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager java.io.File findFolder(org.trypticon.gum.eio.FolderType folderType)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager int getFileCreator(java.io.File file)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager int getFileType(java.io.File file)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager void setFileCreator(java.io.File file, int creator)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager void setFileType(java.io.File file, int type)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager void setFileTypeAndCreator(java.io.File file, int type, int creator)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eio.FileManager int OSTypeToInt(java.lang.String type)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eio.FileManager" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.AboutHandler" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.AppForegroundListener" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.AppHiddenListener" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.AppReOpenedListener" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.FilesEvent java.util.List&lt;java.io.File&gt; getFiles()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.FilesEvent FilesEvent(java.util.List&lt;java.io.File&gt; files)" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.FullScreenEvent java.awt.Window getWindow()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.FullScreenEvent FullScreenEvent(java.awt.Window window)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.FullScreenListener" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.OpenFilesEvent java.lang.String getSearchTerm()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.OpenFilesEvent OpenFilesEvent(java.util.List&lt;java.io.File&gt; files, java.lang.String searchTerm)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.OpenFilesHandler" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.OpenURIEvent java.net.URI getURI()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.OpenURIEvent OpenURIEvent(java.net.URI uri)" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.OpenURIHandler" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.PreferencesHandler" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.PrintFilesHandler" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.QuitHandler" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.QuitResponse void cancelQuit()" />
+      <entry_point TYPE="method" FQNAME="org.trypticon.gum.eawt.event.QuitResponse void performQuit()" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.QuitResponse" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.ScreenSleepListener" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.SystemSleepListener" />
+      <entry_point TYPE="class" FQNAME="org.trypticon.gum.eawt.event.UserSessionListener" />
+    </entry_points>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

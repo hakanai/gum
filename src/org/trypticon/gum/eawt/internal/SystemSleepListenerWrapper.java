@@ -5,7 +5,7 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.SystemSleepEvent;
 import org.trypticon.gum.eawt.event.SystemSleepListener;
 
-public class SystemSleepListenerWrapper implements com.apple.eawt.SystemSleepListener {
+class SystemSleepListenerWrapper implements com.apple.eawt.SystemSleepListener {
     private final SystemSleepListener delegate;
 
     public SystemSleepListenerWrapper(SystemSleepListener delegate) {

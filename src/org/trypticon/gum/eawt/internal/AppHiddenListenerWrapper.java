@@ -4,7 +4,7 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.AppHiddenEvent;
 import org.trypticon.gum.eawt.event.AppHiddenListener;
 
-public class AppHiddenListenerWrapper implements com.apple.eawt.AppHiddenListener {
+class AppHiddenListenerWrapper implements com.apple.eawt.AppHiddenListener {
     private final AppHiddenListener delegate;
 
     AppHiddenListenerWrapper(AppHiddenListener delegate) {

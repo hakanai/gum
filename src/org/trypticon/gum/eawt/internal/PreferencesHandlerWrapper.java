@@ -4,7 +4,7 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.PreferencesEvent;
 import org.trypticon.gum.eawt.event.PreferencesHandler;
 
-public class PreferencesHandlerWrapper implements com.apple.eawt.PreferencesHandler {
+class PreferencesHandlerWrapper implements com.apple.eawt.PreferencesHandler {
     private final PreferencesHandler delegate;
 
     public PreferencesHandlerWrapper(PreferencesHandler delegate) {

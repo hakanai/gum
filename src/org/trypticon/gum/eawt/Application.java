@@ -14,13 +14,6 @@ import java.awt.*;
 public interface Application {
 
     /**
-     * Tests if the application is running on Mac OS X.
-     *
-     * @return {@code true} if the application is running on Mac OS X, {@code false} otherwise.
-     */
-    boolean isMac();
-
-    /**
      * <p>Adds a listener for app events.</p>
      *
      * <p>It is possible to implement multiple sub-interfaces of {@link AppEventListener} and add it as a single

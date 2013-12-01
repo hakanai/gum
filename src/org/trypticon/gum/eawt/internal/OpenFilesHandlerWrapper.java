@@ -4,7 +4,7 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.OpenFilesEvent;
 import org.trypticon.gum.eawt.event.OpenFilesHandler;
 
-public class OpenFilesHandlerWrapper implements com.apple.eawt.OpenFilesHandler {
+class OpenFilesHandlerWrapper implements com.apple.eawt.OpenFilesHandler {
     private final OpenFilesHandler delegate;
 
     public OpenFilesHandlerWrapper(OpenFilesHandler delegate) {

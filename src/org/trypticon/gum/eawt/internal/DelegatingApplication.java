@@ -20,11 +20,6 @@ public class DelegatingApplication implements Application {
     }
 
     @Override
-    public boolean isMac() {
-        return true;
-    }
-
-    @Override
     public void addAppEventListener(AppEventListener listener) {
         if (listener == null) {
             return;
