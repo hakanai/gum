@@ -1,4 +1,4 @@
-package org.trypticon.gum.eawt.internal.delegate;
+package org.trypticon.gum.eawt.internal;
 
 import org.trypticon.gum.eawt.FullScreenUtilities;
 import org.trypticon.gum.eawt.event.FullScreenListener;

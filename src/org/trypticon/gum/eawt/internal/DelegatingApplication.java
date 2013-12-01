@@ -1,4 +1,4 @@
-package org.trypticon.gum.eawt.internal.delegate;
+package org.trypticon.gum.eawt.internal;
 
 import org.trypticon.gum.eawt.Application;
 import org.trypticon.gum.eawt.QuitStrategy;

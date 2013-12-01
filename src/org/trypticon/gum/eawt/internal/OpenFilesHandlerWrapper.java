@@ -1,4 +1,4 @@
-package org.trypticon.gum.eawt.internal.delegate;
+package org.trypticon.gum.eawt.internal;
 
 import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.OpenFilesEvent;
