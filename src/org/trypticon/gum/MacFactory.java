@@ -6,6 +6,8 @@ import org.trypticon.gum.eawt.Application;
 import org.trypticon.gum.eawt.FullScreenUtilities;
 import org.trypticon.gum.eawt.internal.DelegatingApplication;
 import org.trypticon.gum.eawt.internal.DelegatingFullScreenUtilities;
+import org.trypticon.gum.eio.FileManager;
+import org.trypticon.gum.eio.internal.DelegatingFileManager;
 
 /**
  * Factory to get the top-level instance of the application.
@@ -50,6 +52,18 @@ public class MacFactory {
             if (dispatch.isSupported()) {
                 return dispatch;
             }
+        }
+        return null;
+    }
+
+    /**
+     * <p>Gets an instance of the file manager.</p>
+     *
+     * @return the file manager. Returns {@code null} if the service is not available on the current platform.
+     */
+    public static FileManager getFileManager() {
+        if (isMac()) {
+            return new DelegatingFileManager();
         }
         return null;
     }
