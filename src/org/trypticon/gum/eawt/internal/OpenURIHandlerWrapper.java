@@ -4,6 +4,9 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.OpenURIEvent;
 import org.trypticon.gum.eawt.event.OpenURIHandler;
 
+/**
+ * @author trejkaz
+ */
 class OpenURIHandlerWrapper implements com.apple.eawt.OpenURIHandler {
     private final OpenURIHandler delegate;
 

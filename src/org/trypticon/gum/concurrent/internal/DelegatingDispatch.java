@@ -6,6 +6,11 @@ import org.trypticon.gum.concurrent.Priority;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 
+/**
+ * Delegating implementation of the dispatch utility.
+ *
+ * @author trejkaz
+ */
 public class DelegatingDispatch implements Dispatch {
     private final com.apple.concurrent.Dispatch delegate;
 

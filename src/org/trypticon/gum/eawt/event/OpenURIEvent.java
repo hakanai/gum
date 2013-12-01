@@ -2,6 +2,9 @@ package org.trypticon.gum.eawt.event;
 
 import java.net.URI;
 
+/**
+ * @author trejkaz
+ */
 public class OpenURIEvent extends AppEvent {
     private final URI uri;
 

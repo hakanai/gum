@@ -8,7 +8,9 @@ import java.util.Map;
 import java.util.WeakHashMap;
 
 /**
- * Utilities for marking windows as top-level and receiving events when this happens.
+ * Delegating implementation of the full screen utilities.
+ *
+ * @author trejkaz
  */
 public class DelegatingFullScreenUtilities implements FullScreenUtilities {
     private static final Map<FullScreenListener, com.apple.eawt.FullScreenListener> wrapperMap = new WeakHashMap<>();

@@ -11,6 +11,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Delegating implementation of the application utility.
+ *
+ * @author trejkaz
+ */
 public class DelegatingApplication implements Application {
     private final com.apple.eawt.Application delegate;
     private final Map<AppEventListener, List<com.apple.eawt.AppEventListener>> wrapperMap = new HashMap<>();

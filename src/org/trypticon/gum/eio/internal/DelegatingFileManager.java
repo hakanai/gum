@@ -9,6 +9,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+/**
+ * Delegating implementation of the file manager.
+ *
+ * @author trejkaz
+ */
 public class DelegatingFileManager implements FileManager {
     @Override
     public int OSTypeToInt(String type) {

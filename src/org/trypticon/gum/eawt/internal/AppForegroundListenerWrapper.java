@@ -4,6 +4,9 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.AppForegroundEvent;
 import org.trypticon.gum.eawt.event.AppForegroundListener;
 
+/**
+ * @author trejkaz
+ */
 class AppForegroundListenerWrapper implements com.apple.eawt.AppForegroundListener {
     private final AppForegroundListener delegate;
 

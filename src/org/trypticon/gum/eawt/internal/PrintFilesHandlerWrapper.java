@@ -4,6 +4,9 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.PrintFilesEvent;
 import org.trypticon.gum.eawt.event.PrintFilesHandler;
 
+/**
+ * @author trejkaz
+ */
 class PrintFilesHandlerWrapper implements com.apple.eawt.PrintFilesHandler {
     private final PrintFilesHandler delegate;
 

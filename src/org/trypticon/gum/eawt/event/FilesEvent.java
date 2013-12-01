@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author trejkaz
+ */
 public abstract class FilesEvent extends AppEvent {
     private final List<File> files;
 

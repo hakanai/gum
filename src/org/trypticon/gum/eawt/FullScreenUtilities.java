@@ -8,6 +8,7 @@ import java.awt.*;
  * Utilities for marking windows as top-level and receiving events when this happens.
  *
  * @see org.trypticon.gum.MacFactory#getFullScreenUtilities()
+ * @author trejkaz
  */
 public interface FullScreenUtilities {
 

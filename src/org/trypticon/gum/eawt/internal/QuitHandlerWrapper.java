@@ -5,6 +5,9 @@ import com.apple.eawt.QuitResponse;
 import org.trypticon.gum.eawt.event.QuitEvent;
 import org.trypticon.gum.eawt.event.QuitHandler;
 
+/**
+ * @author trejkaz
+ */
 class QuitHandlerWrapper implements com.apple.eawt.QuitHandler {
     private final QuitHandler delegate;
 

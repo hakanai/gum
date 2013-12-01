@@ -2,6 +2,8 @@ package org.trypticon.gum.eawt;
 
 /**
  * Strategy specifying what will actually be done when the application quits.
+ *
+ * @author trejkaz
  */
 public enum QuitStrategy {
 

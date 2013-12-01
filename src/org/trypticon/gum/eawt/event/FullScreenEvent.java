@@ -2,6 +2,9 @@ package org.trypticon.gum.eawt.event;
 
 import java.awt.*;
 
+/**
+ * @author trejkaz
+ */
 public class FullScreenEvent extends AppEvent {
     private final Window window;
 

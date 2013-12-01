@@ -5,6 +5,9 @@ import org.trypticon.gum.eio.Domain;
 import java.util.EnumMap;
 import java.util.Map;
 
+/**
+ * @author trejkaz
+ */
 class DomainMappings {
     private static final Map<Domain, Short> map = new EnumMap<>(Domain.class);
     static {

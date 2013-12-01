@@ -4,6 +4,9 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.UserSessionEvent;
 import org.trypticon.gum.eawt.event.UserSessionListener;
 
+/**
+ * @author trejkaz
+ */
 class UserSessionListenerWrapper implements com.apple.eawt.UserSessionListener {
     private final UserSessionListener delegate;
 

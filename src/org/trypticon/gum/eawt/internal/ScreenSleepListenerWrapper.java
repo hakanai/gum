@@ -5,6 +5,9 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.ScreenSleepEvent;
 import org.trypticon.gum.eawt.event.ScreenSleepListener;
 
+/**
+ * @author trejkaz
+ */
 class ScreenSleepListenerWrapper implements com.apple.eawt.ScreenSleepListener {
     private final ScreenSleepListener delegate;
 

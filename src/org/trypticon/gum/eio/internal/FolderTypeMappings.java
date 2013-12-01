@@ -5,6 +5,9 @@ import org.trypticon.gum.eio.FolderType;
 import java.util.EnumMap;
 import java.util.Map;
 
+/**
+ * @author trejkaz
+ */
 class FolderTypeMappings {
     private static final Map<FolderType, Integer> map = new EnumMap<>(FolderType.class);
     static {

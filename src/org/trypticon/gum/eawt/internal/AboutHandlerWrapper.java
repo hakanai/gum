@@ -4,6 +4,9 @@ import com.apple.eawt.AppEvent;
 import org.trypticon.gum.eawt.event.AboutEvent;
 import org.trypticon.gum.eawt.event.AboutHandler;
 
+/**
+ * @author trejkaz
+ */
 class AboutHandlerWrapper implements com.apple.eawt.AboutHandler {
     private final AboutHandler delegate;
 
