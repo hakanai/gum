@@ -21,7 +21,9 @@
 
     <target name="compile">
         <mkdir dir="build/classes"/>
-        <javac srcdir="src" destdir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes" fork="true">
+          <compilerarg value="-XDignore.symbol.file=true"/>
+        </javac>
     </target>
 
     <target name="jar" depends="compile">

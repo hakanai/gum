@@ -1,7 +1,5 @@
 language: java
 os: osx
-# Trying to force Java 7
-osx_image: xcode6.4
 # Seems like the thing about Ant already being present was a lie.
 before_install: brew update && brew install ant
 script: ant
